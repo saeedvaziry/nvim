@@ -8,21 +8,34 @@ return {
       table.insert(
         opts.adapters,
         require("neotest-phpunit")({
-          phpunit_cmd = function()
-            -- Automatically use Pest if available, fallback to PHPUnit
-            if vim.fn.filereadable("vendor/bin/pest") == 1 then
-              return "./vendor/bin/pest"
-            elseif vim.fn.filereadable("vendor/bin/phpunit") == 1 then
-              return "./vendor/bin/phpunit"
-            else
-              return "phpunit" -- fallback if neither found
-            end
-          end,
+          -- phpunit_cmd = function()
+          --   -- Automatically use Pest if available, fallback to PHPUnit
+          --   if vim.fn.filereadable("vendor/bin/pest") == 1 then
+          --     return "./vendor/bin/pest"
+          --   elseif vim.fn.filereadable("vendor/bin/phpunit") == 1 then
+          --     return "./vendor/bin/phpunit"
+          --   else
+          --     return "phpunit" -- fallback if neither found
+          --   end
+          -- end,
           env = {
             XDEBUG_MODE = "coverage",
           },
         })
       )
+    end,
+  },
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "V13Axel/neotest-pest",
+    },
+    config = function()
+      require("neotest").setup({
+        adapters = {
+          require("neotest-pest"),
+        },
+      })
     end,
   },
 }
