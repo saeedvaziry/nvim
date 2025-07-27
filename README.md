@@ -1,6 +1,6 @@
 # My personal LazyVim config
 
-This config is made for MacOS and I haven't tested it on other platforms.
+This config is made for MacOS and I haven't tested it on other platforms. Tho it should work everywhere
 
 <img width="2246" height="1626" alt="CleanShot 2025-07-27 at 20 53 36@2x" src="https://github.com/user-attachments/assets/47a76937-cefc-4c2a-8042-7ae022748255" />
 
