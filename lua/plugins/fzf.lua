@@ -7,5 +7,8 @@ return {
     files = {
       fd_opts = "--type f --hidden --exclude .git --exclude node_modules --exclude vendor --no-follow",
     },
+    fzf_opts = {
+      ["--ignore-case"] = "",
+    },
   },
 }
