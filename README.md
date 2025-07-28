@@ -16,6 +16,8 @@ brew install ripgrep
 brew install neovim
 ```
 
+This config also requires `GoLang` but if you don't want `GoLang` then just simply use `:LazyExtras` to disable golang and you should be fine.
+
 ## Backup your existing config
 
 ```bash
