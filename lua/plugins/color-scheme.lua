@@ -1,12 +1,26 @@
 return {
   -- more themes -> https://vimcolorschemes.com/
+  -- { "morhetz/gruvbox" },
   { "ellisonleao/gruvbox.nvim" },
   { "rebelot/kanagawa.nvim" },
   { "folke/tokyonight.nvim" },
+  { "cocopon/iceberg.vim" },
+  { "sainnhe/everforest" },
+  {
+    "tahayvr/matteblack.nvim",
+    lazy = false,
+    priority = 1000,
+  },
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "tokyonight-night",
+      -- colorscheme = "kanagawa",
+      -- colorscheme = "matteblack",
+      -- colorscheme = "gruvbox",
+      -- colorscheme = "iceberg",
+      -- colorscheme = "everforest",
+      -- colorscheme = "catppuccin-mocha",
     },
   },
 }

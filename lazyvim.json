@@ -13,7 +13,6 @@
     "lazyvim.plugins.extras.lang.vue",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.test.core",
-    "lazyvim.plugins.extras.util.gitui",
     "lazyvim.plugins.extras.util.project"
   ],
   "install_version": 8,
