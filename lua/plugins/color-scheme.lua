@@ -6,6 +6,9 @@ return {
   { "folke/tokyonight.nvim" },
   { "cocopon/iceberg.vim" },
   { "sainnhe/everforest" },
+  { "sainnhe/sonokai" },
+  { "rose-pine/neovim", name = "rose-pine" },
+  { "EdenEast/nightfox.nvim" },
   {
     "tahayvr/matteblack.nvim",
     lazy = false,
@@ -21,6 +24,7 @@ return {
       -- colorscheme = "iceberg",
       -- colorscheme = "everforest",
       -- colorscheme = "catppuccin-mocha",
+      -- colorscheme = "rose-pine",
     },
   },
 }
